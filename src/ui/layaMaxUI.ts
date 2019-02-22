@@ -3,23 +3,22 @@ import View=Laya.View;
 import Dialog=Laya.Dialog;
 import Scene=Laya.Scene;
 export module ui.game {
-    export class BallUI extends Laya.View {
-        constructor(){ super()}
-        createChildren():void {
-            super.createChildren();
-            this.loadScene("game/Ball");
-        }
-    }
     export class GameUI extends Laya.Scene {
 		public desk:Laya.Sprite;
 		public container_wall:Laya.Sprite;
 		public container_hole:Laya.Sprite;
 		public gameBox:Laya.Sprite;
-		public ball_white:any;
         constructor(){ super()}
         createChildren():void {
             super.createChildren();
             this.loadScene("game/Game");
+        }
+    }
+    export class HoleUI extends Laya.View {
+        constructor(){ super()}
+        createChildren():void {
+            super.createChildren();
+            this.loadScene("game/Hole");
         }
     }
 }

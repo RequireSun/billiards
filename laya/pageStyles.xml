@@ -3,4 +3,6 @@
    <item name="game/Game.scene" props="" ifExport="分离模式" aName=""/>
    <item name="game/Ball.scene" props="" ifExport="分离模式" aName=""/>
    <item name="game/hole.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="prefab/Ball.prefab" props="" ifExport="分离模式" aName=""/>
+   <item name="game/Hole.scene" props="" ifExport="分离模式" aName=""/>
 </page>

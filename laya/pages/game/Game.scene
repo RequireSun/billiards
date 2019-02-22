@@ -1,12 +1,12 @@
 {
     "x":0,
     "type":"Scene",
-    "selectedBox":42,
-    "selecteID":55,
+    "selectedBox":32,
+    "selecteID":81,
     "searchKey":"Scene",
     "props":{"width":1136,"sceneColor":"#000000","runtime":"script/Game.ts","height":640},
     "nodeParent":-1,
-    "maxID":81,
+    "maxID":86,
     "label":"Scene",
     "isOpen":true,
     "isDirectory":true,
@@ -49,14 +49,13 @@
             "props":{"y":107,"x":162,"var":"container_wall","name":"container_wall"},
             "nodeParent":2,
             "label":"container_wall",
-            "isOpen":true,
+            "isOpen":false,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":15,
             "child":[
                 {
-                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,top_left",
                     "props":{"y":0,"x":22,"name":"top_left"},
@@ -69,7 +68,6 @@
                     "compId":37,
                     "child":[
                         {
-                            "x":45,
                             "type":"Rect",
                             "searchKey":"Rect",
                             "props":{"width":367,"lineWidth":1,"height":4,"fillColor":"#000000"},
@@ -84,7 +82,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"BoxCollider",
                             "switchAble":true,
                             "searchKey":"BoxCollider",
@@ -100,7 +97,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"RigidBody",
                             "switchAble":true,
                             "searchKey":"RigidBody",
@@ -117,7 +113,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,top_right",
                     "props":{"y":0,"x":428,"name":"top_right"},
@@ -130,7 +125,6 @@
                     "compId":38,
                     "child":[
                         {
-                            "x":45,
                             "type":"Rect",
                             "searchKey":"Rect",
                             "props":{"width":366,"lineWidth":1,"height":4,"fillColor":"#000000"},
@@ -145,7 +139,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"BoxCollider",
                             "switchAble":true,
                             "searchKey":"BoxCollider",
@@ -161,7 +154,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"RigidBody",
                             "switchAble":true,
                             "searchKey":"RigidBody",
@@ -178,7 +170,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,left",
                     "props":{"y":21,"x":0,"name":"left"},
@@ -191,7 +182,6 @@
                     "compId":39,
                     "child":[
                         {
-                            "x":45,
                             "type":"Rect",
                             "searchKey":"Rect",
                             "props":{"width":4,"lineWidth":1,"height":373,"fillColor":"#000000"},
@@ -206,7 +196,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"BoxCollider",
                             "switchAble":true,
                             "searchKey":"BoxCollider",
@@ -222,7 +211,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"RigidBody",
                             "switchAble":true,
                             "searchKey":"RigidBody",
@@ -239,7 +227,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,bottom_left",
                     "props":{"y":414,"x":22,"name":"bottom_left"},
@@ -252,7 +239,6 @@
                     "compId":40,
                     "child":[
                         {
-                            "x":45,
                             "type":"Rect",
                             "searchKey":"Rect",
                             "props":{"width":362,"lineWidth":1,"height":4,"fillColor":"#000000"},
@@ -267,7 +253,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"BoxCollider",
                             "switchAble":true,
                             "searchKey":"BoxCollider",
@@ -283,7 +268,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"RigidBody",
                             "switchAble":true,
                             "searchKey":"RigidBody",
@@ -300,7 +284,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,bottom_right",
                     "props":{"y":414,"x":430,"name":"bottom_right"},
@@ -313,7 +296,6 @@
                     "compId":41,
                     "child":[
                         {
-                            "x":45,
                             "type":"Rect",
                             "searchKey":"Rect",
                             "props":{"width":362,"lineWidth":1,"height":4,"fillColor":"#000000"},
@@ -328,7 +310,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"BoxCollider",
                             "switchAble":true,
                             "searchKey":"BoxCollider",
@@ -344,7 +325,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"RigidBody",
                             "switchAble":true,
                             "searchKey":"RigidBody",
@@ -361,7 +341,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,right",
                     "props":{"y":22,"x":815,"name":"right"},
@@ -374,7 +353,6 @@
                     "compId":42,
                     "child":[
                         {
-                            "x":45,
                             "type":"Rect",
                             "searchKey":"Rect",
                             "props":{"width":4,"lineWidth":1,"height":373,"fillColor":"#000000"},
@@ -389,7 +367,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"BoxCollider",
                             "switchAble":true,
                             "searchKey":"BoxCollider",
@@ -405,7 +382,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"RigidBody",
                             "switchAble":true,
                             "searchKey":"RigidBody",
@@ -527,235 +503,86 @@
             "props":{"y":107,"x":162,"width":817,"var":"gameBox","name":"gameBox","height":416},
             "nodeParent":2,
             "label":"gameBox",
-            "isOpen":false,
+            "isOpen":true,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":32,
             "child":[
                 {
-                    "type":"UIView",
-                    "source":"game/Ball.scene",
-                    "searchKey":"UIView,ball_white,ball_white",
-                    "props":{"y":193,"x":109,"width":30,"var":"ball_white","name":"ball_white","height":30},
+                    "x":30,
+                    "type":"Sprite",
+                    "searchKey":"Sprite,ball_white",
+                    "props":{"y":193,"x":125,"presetID":1,"preset":"laya/pages/prefab/Ball.prefab","name":"ball_white"},
                     "nodeParent":32,
                     "label":"ball_white",
-                    "isDirectory":false,
+                    "isOpen":false,
+                    "isDirectory":true,
                     "isAniNode":true,
-                    "hasChild":false,
-                    "compId":33,
+                    "hasChild":true,
+                    "compId":81,
                     "child":[
-                        ]
-                },
-                {
-                    "type":"UIView",
-                    "source":"game/Ball.scene",
-                    "searchKey":"UIView,ball_01",
-                    "props":{"y":160,"x":428,"name":"ball_01"},
-                    "nodeParent":32,
-                    "label":"ball_01",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":57,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"UIView",
-                    "source":"game/Ball.scene",
-                    "searchKey":"UIView,ball_02",
-                    "props":{"y":135,"x":458,"name":"ball_02"},
-                    "nodeParent":32,
-                    "label":"ball_02",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":58,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"UIView",
-                    "source":"game/Ball.scene",
-                    "searchKey":"UIView,ball_03",
-                    "props":{"y":180,"x":458,"name":"ball_03"},
-                    "nodeParent":32,
-                    "label":"ball_03",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":59,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"UIView",
-                    "source":"game/Ball.scene",
-                    "searchKey":"UIView,ball_04",
-                    "props":{"y":120,"x":488,"name":"ball_04"},
-                    "nodeParent":32,
-                    "label":"ball_04",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":60,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"UIView",
-                    "source":"game/Ball.scene",
-                    "searchKey":"UIView,ball_05",
-                    "props":{"y":160,"x":488,"name":"ball_05"},
-                    "nodeParent":32,
-                    "label":"ball_05",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":61,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"UIView",
-                    "source":"game/Ball.scene",
-                    "searchKey":"UIView,ball_06",
-                    "props":{"y":210,"x":488,"name":"ball_06"},
-                    "nodeParent":32,
-                    "label":"ball_06",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":62,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"UIView",
-                    "source":"game/Ball.scene",
-                    "searchKey":"UIView,ball_07",
-                    "props":{"y":105,"x":518,"name":"ball_07"},
-                    "nodeParent":32,
-                    "label":"ball_07",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":63,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"UIView",
-                    "source":"game/Ball.scene",
-                    "searchKey":"UIView,ball_08",
-                    "props":{"y":135,"x":518,"name":"ball_08"},
-                    "nodeParent":32,
-                    "label":"ball_08",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":64,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"UIView",
-                    "source":"game/Ball.scene",
-                    "searchKey":"UIView,ball_09",
-                    "props":{"y":180,"x":518,"name":"ball_09"},
-                    "nodeParent":32,
-                    "label":"ball_09",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":65,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"UIView",
-                    "source":"game/Ball.scene",
-                    "searchKey":"UIView,ball_10",
-                    "props":{"y":225,"x":518,"name":"ball_10"},
-                    "nodeParent":32,
-                    "label":"ball_10",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":67,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"UIView",
-                    "source":"game/Ball.scene",
-                    "searchKey":"UIView,ball_11",
-                    "props":{"y":75,"x":548,"name":"ball_11"},
-                    "nodeParent":32,
-                    "label":"ball_11",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":68,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"UIView",
-                    "source":"game/Ball.scene",
-                    "searchKey":"UIView,ball_12",
-                    "props":{"y":120,"x":548,"name":"ball_12"},
-                    "nodeParent":32,
-                    "label":"ball_12",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":69,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"UIView",
-                    "source":"game/Ball.scene",
-                    "searchKey":"UIView,ball_13",
-                    "props":{"y":160,"x":548,"name":"ball_13"},
-                    "nodeParent":32,
-                    "label":"ball_13",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":70,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"UIView",
-                    "source":"game/Ball.scene",
-                    "searchKey":"UIView,ball_14",
-                    "props":{"y":210,"x":548,"name":"ball_14"},
-                    "nodeParent":32,
-                    "label":"ball_14",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":71,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"UIView",
-                    "source":"game/Ball.scene",
-                    "searchKey":"UIView,ball_15",
-                    "props":{"y":255,"x":548,"name":"ball_15"},
-                    "nodeParent":32,
-                    "label":"ball_15",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":66,
-                    "child":[
-                        ]
+                        {
+                            "type":"Circle",
+                            "searchKey":"Circle",
+                            "props":{"presetID":2,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "nodeParent":81,
+                            "label":"Circle(Ball)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":82,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"CircleCollider",
+                            "switchAble":true,
+                            "searchKey":"CircleCollider",
+                            "removeAble":true,
+                            "props":{"presetID":3,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "nodeParent":81,
+                            "label":"CircleCollider(Ball)",
+                            "isDirectory":false,
+                            "isClose":true,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":83,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"RigidBody",
+                            "switchAble":true,
+                            "searchKey":"RigidBody",
+                            "removeAble":true,
+                            "props":{"presetID":4,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "nodeParent":81,
+                            "label":"RigidBody(Ball)",
+                            "isDirectory":false,
+                            "isClose":true,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":84,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"Script",
+                            "switchAble":true,
+                            "source":"src/script/Ball.ts",
+                            "searchKey":"Script,Ball",
+                            "removeAble":true,
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":0},
+                            "nodeParent":81,
+                            "label":"Ball",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":85,
+                            "child":[
+                                ]
+                        }]
                 }]
         },
         {

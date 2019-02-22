@@ -11,10 +11,11 @@ export module ui.game {
         }
     }
     export class GameUI extends Laya.Scene {
+		public desk:Laya.Sprite;
 		public container_wall:Laya.Sprite;
 		public container_hole:Laya.Sprite;
 		public gameBox:Laya.Sprite;
-		public ball:any;
+		public ball_white:any;
         constructor(){ super()}
         createChildren():void {
             super.createChildren();

@@ -2,4 +2,5 @@
    <item name="Game.scene" props="" ifExport="文件模式" aName=""/>
    <item name="game/Game.scene" props="" ifExport="分离模式" aName=""/>
    <item name="game/Ball.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="game/hole.scene" props="" ifExport="分离模式" aName=""/>
 </page>

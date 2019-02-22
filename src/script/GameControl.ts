@@ -18,7 +18,7 @@ export default class GameControl extends Laya.Script {
         //停止事件冒泡，提高性能，当然也可以不要
         e.stopPropagation();
 
-        let ball: Ball = this._gameBox.getChildByName('ball') as any;
+        let ball: Ball = this._gameBox.getChildByName('ball_white') as any;
         ball.startMove();
         
         //舞台被点击后，使用对象池创建子弹

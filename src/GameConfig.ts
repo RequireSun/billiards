@@ -6,10 +6,10 @@ import GameControl from "./script/GameControl"
 * 游戏初始化配置;
 */
 export default class GameConfig{
-    static width:number=640;
-    static height:number=1136;
-    static scaleMode:string="fixedwidth";
-    static screenMode:string="vertical";
+    static width:number=1136;
+    static height:number=640;
+    static scaleMode:string="fixedauto";
+    static screenMode:string="horizontal";
     static alignV:string="top";
     static alignH:string="left";
     static startScene:any="game/Game.scene";

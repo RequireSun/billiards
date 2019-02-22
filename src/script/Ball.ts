@@ -21,7 +21,10 @@ export default class Ball extends ui.game.BallUI {
     startMove(): void {
         console.log('start move');
         var rig: Laya.RigidBody = this.getComponent(Laya.RigidBody);
-        rig.setVelocity({ x: 0, y: -10 });
+        const x: number = (.5 < Math.random() ? 1 : -1) * Math.random() * 10;
+        const y: number = (.5 < Math.random() ? 1 : -1) * Math.random() * 10;
+
+        rig.setVelocity({ x, y });
     }
 
     // onUpdate(): void {

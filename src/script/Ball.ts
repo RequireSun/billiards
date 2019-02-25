@@ -22,6 +22,12 @@ export default class Ball extends Laya.Script {
     }
 
     onEnable(): void {
+        if (this.number) {
+            const label: Laya.Label = this.owner.getChildByName('label') as Laya.Label;
+    
+            label.text = `${this.number}`;
+        }
+
         Object.defineProperty(this.owner, 'startMove', {
             enumerable: false,
             value() {
@@ -43,15 +49,15 @@ export default class Ball extends Laya.Script {
     //     rig.setVelocity({ x, y });
     // }
 
-    onUpdate(): void {
-        // const owner: Laya.Sprite = this.owner as Laya.Sprite;
+    // onUpdate(): void {
+    //     // const owner: Laya.Sprite = this.owner as Laya.Sprite;
 
-        // console.log('x: ', owner.x, '; y: ', owner.y);
-    //     //如果子弹超出屏幕，则移除子弹
-    //     if ((this.owner as Laya.Sprite).y < -10) {
-    //         this.owner.removeSelf();
-    //     }
-    }
+    //     // console.log('x: ', owner.x, '; y: ', owner.y);
+    // //     //如果子弹超出屏幕，则移除子弹
+    // //     if ((this.owner as Laya.Sprite).y < -10) {
+    // //         this.owner.removeSelf();
+    // //     }
+    // }
 
     // onDisable(): void {
     //     //子弹被移除时，回收子弹到对象池，方便下次复用，减少对象创建开销

@@ -6,7 +6,7 @@
     "searchKey":"Scene",
     "props":{"width":1136,"sceneColor":"#000000","runtime":"script/Game.ts","height":640},
     "nodeParent":-1,
-    "maxID":86,
+    "maxID":93,
     "label":"Scene",
     "isOpen":true,
     "isDirectory":true,
@@ -582,6 +582,119 @@
                             "compId":85,
                             "child":[
                                 ]
+                        },
+                        {
+                            "type":"Label",
+                            "searchKey":"Label",
+                            "props":{"presetID":6,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "nodeParent":81,
+                            "label":"label",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":86,
+                            "child":[
+                                ]
+                        }]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "selectedBox":81,
+                    "selecteID":86,
+                    "searchKey":"Sprite,ball_01,ball_01",
+                    "props":{"y":193,"x":470,"var":"ball_01","presetID":1,"preset":"laya/pages/prefab/Ball.prefab","name":"ball_01"},
+                    "nodeParent":32,
+                    "maxID":87,
+                    "label":"ball_01",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":87,
+                    "child":[
+                        {
+                            "type":"Circle",
+                            "searchKey":"Circle",
+                            "props":{"presetID":2,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "nodeParent":87,
+                            "label":"Circle(Ball)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":88,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"CircleCollider",
+                            "switchAble":true,
+                            "searchKey":"CircleCollider",
+                            "removeAble":true,
+                            "props":{"presetID":3,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "nodeParent":87,
+                            "label":"CircleCollider(Ball)",
+                            "isDirectory":false,
+                            "isClose":true,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":89,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"RigidBody",
+                            "switchAble":true,
+                            "searchKey":"RigidBody",
+                            "removeAble":true,
+                            "props":{"presetID":4,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "nodeParent":87,
+                            "label":"RigidBody(Ball)",
+                            "isDirectory":false,
+                            "isClose":true,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":90,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"Script",
+                            "switchAble":true,
+                            "source":"src/script/Ball.ts",
+                            "searchKey":"Script,Ball",
+                            "removeAble":true,
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":1},
+                            "nodeParent":87,
+                            "label":"Ball",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":91,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"Label",
+                            "searchKey":"Label",
+                            "props":{"presetID":6,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "nodeParent":87,
+                            "label":"label",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":92,
+                            "child":[
+                                ]
+                        }],
+                    "animations":[
+                        {
+                            "nodes":[
+                                ],
+                            "name":"ani1",
+                            "id":1,
+                            "frameRate":24,
+                            "action":0
                         }]
                 }]
         },

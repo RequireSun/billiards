@@ -20,7 +20,7 @@ export default class GameControl extends Laya.Script {
 
         let ball = this._gameBox.getChildByName('ball_white');
         // ball = ball.getComponent(Ball);
-        // ball.startMove();
+        (ball as any).startMove();
         
         //舞台被点击后，使用对象池创建子弹
         // let flyer: Laya.Sprite = Laya.Pool.getItemByCreateFun("bullet", this.bullet.create, this.bullet);

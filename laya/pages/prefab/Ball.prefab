@@ -83,7 +83,7 @@
             "x":15,
             "type":"Label",
             "searchKey":"Label,label",
-            "props":{"width":30,"presetID":6,"preset":"laya/pages/prefab/Ball.prefab","name":"label","height":30},
+            "props":{"y":6,"x":6,"width":16,"valign":"middle","presetID":6,"preset":"laya/pages/prefab/Ball.prefab","name":"label","height":16,"fontSize":12,"color":"#ffffff","align":"center"},
             "nodeParent":81,
             "label":"label",
             "isDirectory":false,

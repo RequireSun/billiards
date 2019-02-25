@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"Scene",
-    "selectedBox":32,
-    "selecteID":81,
+    "selectedBox":15,
+    "selecteID":41,
     "searchKey":"Scene",
     "props":{"width":1136,"sceneColor":"#000000","runtime":"script/Game.ts","height":640},
     "nodeParent":-1,
@@ -46,16 +46,17 @@
             "x":15,
             "type":"Sprite",
             "searchKey":"Sprite,container_wall,container_wall",
-            "props":{"y":107,"x":162,"var":"container_wall","name":"container_wall"},
+            "props":{"y":105,"x":162,"var":"container_wall","name":"container_wall"},
             "nodeParent":2,
             "label":"container_wall",
-            "isOpen":false,
+            "isOpen":true,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":15,
             "child":[
                 {
+                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,top_left",
                     "props":{"y":0,"x":22,"name":"top_left"},
@@ -68,6 +69,7 @@
                     "compId":37,
                     "child":[
                         {
+                            "x":45,
                             "type":"Rect",
                             "searchKey":"Rect",
                             "props":{"width":367,"lineWidth":1,"height":4,"fillColor":"#000000"},
@@ -82,6 +84,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"BoxCollider",
                             "switchAble":true,
                             "searchKey":"BoxCollider",
@@ -97,6 +100,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"RigidBody",
                             "switchAble":true,
                             "searchKey":"RigidBody",
@@ -113,6 +117,7 @@
                         }]
                 },
                 {
+                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,top_right",
                     "props":{"y":0,"x":428,"name":"top_right"},
@@ -125,6 +130,7 @@
                     "compId":38,
                     "child":[
                         {
+                            "x":45,
                             "type":"Rect",
                             "searchKey":"Rect",
                             "props":{"width":366,"lineWidth":1,"height":4,"fillColor":"#000000"},
@@ -139,6 +145,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"BoxCollider",
                             "switchAble":true,
                             "searchKey":"BoxCollider",
@@ -154,6 +161,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"RigidBody",
                             "switchAble":true,
                             "searchKey":"RigidBody",
@@ -170,6 +178,7 @@
                         }]
                 },
                 {
+                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,left",
                     "props":{"y":21,"x":0,"name":"left"},
@@ -182,6 +191,7 @@
                     "compId":39,
                     "child":[
                         {
+                            "x":45,
                             "type":"Rect",
                             "searchKey":"Rect",
                             "props":{"width":4,"lineWidth":1,"height":373,"fillColor":"#000000"},
@@ -196,6 +206,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"BoxCollider",
                             "switchAble":true,
                             "searchKey":"BoxCollider",
@@ -211,6 +222,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"RigidBody",
                             "switchAble":true,
                             "searchKey":"RigidBody",
@@ -227,9 +239,10 @@
                         }]
                 },
                 {
+                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,bottom_left",
-                    "props":{"y":414,"x":22,"name":"bottom_left"},
+                    "props":{"y":416,"x":22,"name":"bottom_left"},
                     "nodeParent":15,
                     "label":"bottom_left",
                     "isOpen":true,
@@ -239,6 +252,7 @@
                     "compId":40,
                     "child":[
                         {
+                            "x":45,
                             "type":"Rect",
                             "searchKey":"Rect",
                             "props":{"width":362,"lineWidth":1,"height":4,"fillColor":"#000000"},
@@ -253,6 +267,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"BoxCollider",
                             "switchAble":true,
                             "searchKey":"BoxCollider",
@@ -268,6 +283,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"RigidBody",
                             "switchAble":true,
                             "searchKey":"RigidBody",
@@ -284,9 +300,10 @@
                         }]
                 },
                 {
+                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,bottom_right",
-                    "props":{"y":414,"x":430,"name":"bottom_right"},
+                    "props":{"y":416,"x":430,"name":"bottom_right"},
                     "nodeParent":15,
                     "label":"bottom_right",
                     "isOpen":true,
@@ -296,6 +313,7 @@
                     "compId":41,
                     "child":[
                         {
+                            "x":45,
                             "type":"Rect",
                             "searchKey":"Rect",
                             "props":{"width":362,"lineWidth":1,"height":4,"fillColor":"#000000"},
@@ -310,6 +328,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"BoxCollider",
                             "switchAble":true,
                             "searchKey":"BoxCollider",
@@ -325,6 +344,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"RigidBody",
                             "switchAble":true,
                             "searchKey":"RigidBody",
@@ -341,6 +361,7 @@
                         }]
                 },
                 {
+                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,right",
                     "props":{"y":22,"x":815,"name":"right"},
@@ -353,6 +374,7 @@
                     "compId":42,
                     "child":[
                         {
+                            "x":45,
                             "type":"Rect",
                             "searchKey":"Rect",
                             "props":{"width":4,"lineWidth":1,"height":373,"fillColor":"#000000"},
@@ -367,6 +389,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"BoxCollider",
                             "switchAble":true,
                             "searchKey":"BoxCollider",
@@ -382,6 +405,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"RigidBody",
                             "switchAble":true,
                             "searchKey":"RigidBody",
@@ -402,20 +426,21 @@
             "x":15,
             "type":"Sprite",
             "searchKey":"Sprite,container_hole,container_hole",
-            "props":{"y":107,"x":162,"width":838,"var":"container_hole","name":"container_hole","height":440},
+            "props":{"y":107,"x":162,"width":819,"var":"container_hole","name":"container_hole","height":418},
             "nodeParent":2,
             "label":"container_hole",
-            "isOpen":false,
+            "isOpen":true,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":28,
             "child":[
                 {
+                    "x":30,
                     "type":"UIView",
                     "source":"game/Hole.scene",
                     "searchKey":"UIView,top_left",
-                    "props":{"y":-22,"x":-22,"name":"top_left"},
+                    "props":{"y":0,"x":0,"width":44,"pivotY":22,"pivotX":22,"name":"top_left","height":44},
                     "nodeParent":28,
                     "label":"top_left",
                     "isDirectory":false,
@@ -426,10 +451,11 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"UIView",
                     "source":"game/Hole.scene",
                     "searchKey":"UIView,bottom_left",
-                    "props":{"y":394,"x":-22,"name":"bottom_left"},
+                    "props":{"y":416,"x":0,"width":44,"pivotY":22,"pivotX":22,"name":"bottom_left","height":44},
                     "nodeParent":28,
                     "label":"bottom_left",
                     "isDirectory":false,
@@ -440,10 +466,11 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"UIView",
                     "source":"game/Hole.scene",
                     "searchKey":"UIView,top_middle",
-                    "props":{"y":-22,"x":387,"name":"top_middle"},
+                    "props":{"y":0,"x":409,"width":44,"pivotY":22,"pivotX":22,"name":"top_middle","height":44},
                     "nodeParent":28,
                     "label":"top_middle",
                     "isDirectory":false,
@@ -454,10 +481,11 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"UIView",
                     "source":"game/Hole.scene",
                     "searchKey":"UIView,bottom_middle",
-                    "props":{"y":398,"x":385,"name":"bottom_middle"},
+                    "props":{"y":420,"x":407,"width":44,"pivotY":22,"pivotX":22,"name":"bottom_middle","height":44},
                     "nodeParent":28,
                     "label":"bottom_middle",
                     "isDirectory":false,
@@ -468,10 +496,11 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"UIView",
                     "source":"game/Hole.scene",
                     "searchKey":"UIView,top_right",
-                    "props":{"y":-22,"x":794,"name":"top_right"},
+                    "props":{"y":0,"x":816,"width":44,"pivotY":22,"pivotX":22,"name":"top_right","height":44},
                     "nodeParent":28,
                     "label":"top_right",
                     "isDirectory":false,
@@ -482,10 +511,11 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"UIView",
                     "source":"game/Hole.scene",
                     "searchKey":"UIView,bottom_right",
-                    "props":{"y":394,"x":792,"name":"bottom_right"},
+                    "props":{"y":416,"x":814,"width":44,"pivotY":22,"pivotX":22,"name":"bottom_right","height":44},
                     "nodeParent":28,
                     "label":"bottom_right",
                     "isDirectory":false,
@@ -513,7 +543,7 @@
                     "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,ball_white",
-                    "props":{"y":193,"x":125,"presetID":1,"preset":"laya/pages/prefab/Ball.prefab","name":"ball_white"},
+                    "props":{"y":208,"x":140,"width":30,"presetID":1,"preset":"laya/pages/prefab/Ball.prefab","pivotY":15,"pivotX":15,"name":"ball_white","height":30},
                     "nodeParent":32,
                     "label":"ball_white",
                     "isOpen":false,
@@ -607,13 +637,14 @@
                     "nodeParent":32,
                     "maxID":87,
                     "label":"ball_01",
-                    "isOpen":false,
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":87,
                     "child":[
                         {
+                            "x":45,
                             "type":"Circle",
                             "searchKey":"Circle",
                             "props":{"presetID":2,"preset":"laya/pages/prefab/Ball.prefab"},
@@ -627,6 +658,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"CircleCollider",
                             "switchAble":true,
                             "searchKey":"CircleCollider",
@@ -643,6 +675,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"RigidBody",
                             "switchAble":true,
                             "searchKey":"RigidBody",
@@ -659,6 +692,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Script",
                             "switchAble":true,
                             "source":"src/script/Ball.ts",
@@ -675,9 +709,10 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Label",
                             "searchKey":"Label",
-                            "props":{"presetID":6,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "props":{"y":15,"x":15,"width":30,"presetID":6,"preset":"laya/pages/prefab/Ball.prefab","pivotY":15,"pivotX":15,"height":30},
                             "nodeParent":87,
                             "label":"label",
                             "isDirectory":false,

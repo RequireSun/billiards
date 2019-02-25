@@ -1,4 +1,5 @@
 import { ui } from "./../ui/layaMaxUI";
+
 /**
  * 子弹脚本，实现子弹飞行逻辑及对象池回收机制
  */
@@ -11,6 +12,7 @@ export default class Ball extends Laya.Script {
     private _endX: number;
     private _endY: number;
 
+    private _middle: number;
     private _middleLeft: number;
     private _middleRight: number;
 
@@ -38,6 +40,7 @@ export default class Ball extends Laya.Script {
         this._endX = /*this._startX + */parent.width;
         this._endY = /*this._startY + */parent.height;
 
+        this._middle = parent.width / 2;
         this._middleLeft = parent.width / 2 - 22;
         this._middleRight = parent.width / 2 + 22;
 
@@ -63,23 +66,50 @@ export default class Ball extends Laya.Script {
 
         if (x < this._startX) {
             if (y < this._startY) {
-                console.log('左上洞');
+                if (22 > Math.sqrt(x ** 2 + y ** 2)) {
+                    console.log('左上洞');
+                }
             } else if (y > this._endY) {
-                console.log('左下洞');
+                if (22 > Math.sqrt(
+                    ((22 - (this._startX - x)) ** 2) + 
+                    ((22 - (y - this._endY)) ** 2)
+                )) {
+                    console.log('左下洞');
+                }
             }
         } else if (x > this._endX) {
             if (y < this._startY) {
-                console.log('右上洞');
+                if (22 > Math.sqrt(
+                    ((22 - (x - this._startX)) ** 2) + 
+                    ((22 - (this._endY - y)) ** 2)
+                )) {
+                    console.log('右上洞');
+                }
             } else if (y > this._endY) {
-                console.log('右下洞');
+                if (22 > Math.sqrt(
+                    ((22 - (x - this._startX)) ** 2) + 
+                    ((22 - (y - this._endY)) ** 2)
+                )) {
+                    console.log('右下洞');
+                }
             }
         } else if (y < this._startY) {
             if (x > this._middleLeft && x < this._middleRight) {
-                console.log('中上洞');
+                if (22 > Math.sqrt(
+                    ((22 - (x - this._middle)) ** 2) + 
+                    ((22 - (this._startY - y)) ** 2)
+                )) {
+                    console.log('中上洞');
+                }
             }
         } else if (y > this._endY) {
             if (x > this._middleLeft && x < this._middleRight) {
-                console.log('中下洞');
+                if (22 > Math.sqrt(
+                    ((22 - (x - this._middle)) ** 2) + 
+                    ((22 - (this._endY - y)) ** 2)
+                )) {
+                    console.log('中下洞');
+                }
             }
         }
         // 其他情况就是在桌子中间了

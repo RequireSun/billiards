@@ -7,8 +7,8 @@ export module ui.game {
 		public desk:Laya.Sprite;
 		public container_wall:Laya.Sprite;
 		public container_hole:Laya.Sprite;
-		public gameBox:Laya.Sprite;
 		public ball_01:Laya.Sprite;
+		public container_goal:Laya.Sprite;
         constructor(){ super()}
         createChildren():void {
             super.createChildren();

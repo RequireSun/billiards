@@ -4,21 +4,27 @@ import Ball from './Ball';
  * 更多类型定义，请参考官方文档
  */
 export default class GameControl extends Laya.Script {
-    private _gameBox: Laya.Sprite;
+    static instance: GameControl;
 
-    constructor() { 
+    private _containerBall: Laya.Sprite;
+
+    constructor() {
         super(); 
     }
 
     onEnable(): void {
-        this._gameBox = this.owner.getChildByName("gameBox") as Laya.Sprite;
+        this._containerBall = this.owner.getChildByName("container_ball") as Laya.Sprite;
     }
 
     onStageClick(e: Laya.Event): void {
         //停止事件冒泡，提高性能，当然也可以不要
         e.stopPropagation();
 
-        let ball = this._gameBox.getChildByName('ball_white') as Laya.Sprite;
+        // 这个是随机方向生成, 最早开发的时候用的, 现在早就用不到了
+        // const x: number = (.5 < Math.random() ? 1 : -1) * Math.random() * 10;
+        // const y: number = (.5 < Math.random() ? 1 : -1) * Math.random() * 10;
+
+        let ball = this._containerBall.getChildByName('ball_white') as Laya.Sprite;
 
         const parent = ball.parent as Laya.Sprite;
 
@@ -31,16 +37,9 @@ export default class GameControl extends Laya.Script {
         const x: number = (touchX - ballX) / 20;
         const y: number = (touchY - ballY) / 20;
 
-        console.log(touchX, touchY, ballX, ballY, x, y);
-
-        // const x: number = (.5 < Math.random() ? 1 : -1) * Math.random() * 10;
-        // const y: number = (.5 < Math.random() ? 1 : -1) * Math.random() * 10;
+        // 这个是开发时用来判断点击位置和球运行方向用的, 现在已经算好了, 就先隐藏, 以后调试可以继续用
+        // console.log(touchX, touchY, ballX, ballY, x, y);
 
         (ball as any).startMove(x, y);
-        
-        //舞台被点击后，使用对象池创建子弹
-        // let flyer: Laya.Sprite = Laya.Pool.getItemByCreateFun("bullet", this.bullet.create, this.bullet);
-        // flyer.pos(Laya.stage.mouseX, Laya.stage.mouseY);
-        // this._gameBox.addChild(flyer);
     }
 }

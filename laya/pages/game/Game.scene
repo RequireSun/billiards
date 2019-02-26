@@ -1,12 +1,12 @@
 {
     "x":0,
     "type":"Scene",
-    "selectedBox":32,
-    "selecteID":87,
+    "selectedBox":2,
+    "selecteID":32,
     "searchKey":"Scene",
     "props":{"width":1136,"sceneColor":"#000000","runtime":"script/Game.ts","height":640},
     "nodeParent":-1,
-    "maxID":103,
+    "maxID":106,
     "label":"Scene",
     "isOpen":true,
     "isDirectory":true,
@@ -17,10 +17,10 @@
         {
             "x":15,
             "type":"Image",
-            "searchKey":"Image",
-            "props":{"y":0,"x":0,"width":1136,"skin":"game/floor.jpg","sizeGrid":"1,1,1,1,1","height":640},
+            "searchKey":"Image,background",
+            "props":{"y":-1,"x":0,"width":1136,"skin":"game/floor.jpg","sizeGrid":"1,1,1,1,1","name":"background","height":640},
             "nodeParent":2,
-            "label":"Image",
+            "label":"background",
             "isDirectory":false,
             "isAniNode":true,
             "hasChild":false,
@@ -32,7 +32,7 @@
             "x":15,
             "type":"Sprite",
             "searchKey":"Sprite,desk,desk",
-            "props":{"y":65,"x":120,"width":900,"var":"desk","texture":"game/desk.png","name":"desk","height":500},
+            "props":{"y":42,"x":118,"width":900,"var":"desk","texture":"game/desk.png","name":"desk","height":500},
             "nodeParent":2,
             "label":"desk",
             "isDirectory":false,
@@ -46,7 +46,7 @@
             "x":15,
             "type":"Sprite",
             "searchKey":"Sprite,container_wall,container_wall",
-            "props":{"y":105,"x":162,"var":"container_wall","name":"container_wall"},
+            "props":{"y":82,"x":160,"var":"container_wall","name":"container_wall"},
             "nodeParent":2,
             "label":"container_wall",
             "isOpen":false,
@@ -402,7 +402,7 @@
             "x":15,
             "type":"Sprite",
             "searchKey":"Sprite,container_hole,container_hole",
-            "props":{"y":107,"x":162,"width":819,"var":"container_hole","name":"container_hole","height":418},
+            "props":{"y":84,"x":160,"width":819,"var":"container_hole","name":"container_hole","height":418},
             "nodeParent":2,
             "label":"container_hole",
             "isOpen":false,
@@ -494,10 +494,10 @@
         {
             "x":15,
             "type":"Sprite",
-            "searchKey":"Sprite,gameBox,gameBox",
-            "props":{"y":107,"x":162,"width":817,"var":"gameBox","name":"gameBox","height":416},
+            "searchKey":"Sprite,container_ball",
+            "props":{"y":84,"x":160,"width":817,"name":"container_ball","height":416},
             "nodeParent":2,
-            "label":"gameBox",
+            "label":"container_ball",
             "isOpen":true,
             "isDirectory":true,
             "isAniNode":true,
@@ -609,7 +609,6 @@
                     "compId":87,
                     "child":[
                         {
-                            "x":45,
                             "type":"Circle",
                             "searchKey":"Circle",
                             "props":{"presetID":2,"preset":"laya/pages/prefab/Ball.prefab"},
@@ -623,7 +622,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"CircleCollider",
                             "switchAble":true,
                             "searchKey":"CircleCollider",
@@ -640,7 +638,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"RigidBody",
                             "switchAble":true,
                             "searchKey":"RigidBody",
@@ -657,7 +654,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Script",
                             "switchAble":true,
                             "source":"src/script/Ball.ts",
@@ -674,7 +670,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Label",
                             "searchKey":"Label",
                             "props":{"y":15,"x":15,"width":30,"presetID":6,"preset":"laya/pages/prefab/Ball.prefab","pivotY":15,"pivotX":15,"height":30},
@@ -700,12 +695,54 @@
         },
         {
             "x":15,
+            "type":"Sprite",
+            "searchKey":"Sprite,container_goal,container_goal",
+            "props":{"y":575,"x":319.5,"var":"container_goal","name":"container_goal"},
+            "nodeParent":2,
+            "label":"container_goal",
+            "isOpen":true,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":103,
+            "child":[
+                {
+                    "x":30,
+                    "type":"Rect",
+                    "searchKey":"Rect",
+                    "props":{"width":500,"lineWidth":1,"height":40,"fillColor":"gray"},
+                    "nodeParent":103,
+                    "label":"Rect",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":104,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "searchKey":"Sprite,container",
+                    "props":{"y":0,"x":0,"width":500,"name":"container","height":40},
+                    "nodeParent":103,
+                    "label":"container",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":105,
+                    "child":[
+                        ]
+                }]
+        },
+        {
+            "x":15,
             "type":"Script",
             "switchAble":true,
             "source":"src/script/GameControl.ts",
             "searchKey":"Script,GameControl",
             "removeAble":true,
-            "props":{},
+            "props":{"y":0,"x":0},
             "nodeParent":2,
             "label":"GameControl",
             "isDirectory":false,

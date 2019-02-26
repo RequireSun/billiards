@@ -20,6 +20,7 @@ export default class Ball extends Laya.Script {
 
     onEnable(): void {
         if (!this.isInitialized) {
+            // 测试时候没有皮肤, 用的白球 + 数字
             // if (this.number) {
             //     const label: Laya.Label = this.owner.getChildByName('label') as Laya.Label;
         
@@ -106,17 +107,16 @@ export default class Ball extends Laya.Script {
     }
 
     handlerGoal(): void {
-        if (0 === this.number) {
-            (this.owner as Laya.Sprite).pos(initialPositionWhite.x, initialPositionWhite.y);
-        } else {
-            // TODO 要计算下下方计分区位置在哪
-            this.owner.removeSelf();
-            const containerGoal = Game.instance.container_goal.addChild(this.owner);
-        }
+        // if (0 === this.number) {
+        //     console.log('白球进了');
+        //     (this.owner as Laya.Sprite).pos(initialPositionWhite.x, initialPositionWhite.y);
+        // } else {
+        //     console.log('进球！', this.number);
+        //     // TODO 要计算下下方计分区位置在哪
+        //     this.owner.removeSelf();
+        //     const containerGoal = Game.instance.container_goal.addChild(this.owner);
+        // }
+        // Game.instance.event('ball.goal', this.number);
+        (Game.instance as any).handlerGoal(this.number);
     }
-
-    // onDisable(): void {
-    //     //子弹被移除时，回收子弹到对象池，方便下次复用，减少对象创建开销
-    //     Laya.Pool.recover("bullet", this.owner);
-    // }
 }

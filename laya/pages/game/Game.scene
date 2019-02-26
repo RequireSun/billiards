@@ -1,12 +1,12 @@
 {
     "x":0,
     "type":"Scene",
-    "selectedBox":32,
-    "selecteID":199,
+    "selectedBox":2,
+    "selecteID":103,
     "searchKey":"Scene",
     "props":{"width":1136,"sceneColor":"#000000","runtime":"script/Game.ts","height":640},
     "nodeParent":-1,
-    "maxID":213,
+    "maxID":214,
     "label":"Scene",
     "isOpen":true,
     "isDirectory":true,
@@ -498,14 +498,13 @@
             "props":{"y":84,"x":160,"width":817,"name":"container_ball","height":416},
             "nodeParent":2,
             "label":"container_ball",
-            "isOpen":true,
+            "isOpen":false,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":32,
             "child":[
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -571,7 +570,7 @@
                             "source":"src/script/Ball.ts",
                             "searchKey":"Script,Ball",
                             "removeAble":true,
-                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":0},
                             "nodeParent":106,
                             "label":"Ball",
                             "isDirectory":false,
@@ -618,7 +617,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -684,7 +682,7 @@
                             "source":"src/script/Ball.ts",
                             "searchKey":"Script,Ball",
                             "removeAble":true,
-                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":1},
                             "nodeParent":113,
                             "label":"Ball",
                             "isDirectory":false,
@@ -731,7 +729,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -797,7 +794,7 @@
                             "source":"src/script/Ball.ts",
                             "searchKey":"Script,Ball",
                             "removeAble":true,
-                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":2},
                             "nodeParent":114,
                             "label":"Ball",
                             "isDirectory":false,
@@ -844,7 +841,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -910,7 +906,7 @@
                             "source":"src/script/Ball.ts",
                             "searchKey":"Script,Ball",
                             "removeAble":true,
-                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":3},
                             "nodeParent":121,
                             "label":"Ball",
                             "isDirectory":false,
@@ -957,7 +953,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1023,7 +1018,7 @@
                             "source":"src/script/Ball.ts",
                             "searchKey":"Script,Ball",
                             "removeAble":true,
-                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":4},
                             "nodeParent":128,
                             "label":"Ball",
                             "isDirectory":false,
@@ -1070,7 +1065,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1136,7 +1130,7 @@
                             "source":"src/script/Ball.ts",
                             "searchKey":"Script,Ball",
                             "removeAble":true,
-                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":5},
                             "nodeParent":135,
                             "label":"Ball",
                             "isDirectory":false,
@@ -1183,7 +1177,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1249,7 +1242,7 @@
                             "source":"src/script/Ball.ts",
                             "searchKey":"Script,Ball",
                             "removeAble":true,
-                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":6},
                             "nodeParent":142,
                             "label":"Ball",
                             "isDirectory":false,
@@ -1296,7 +1289,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1362,7 +1354,7 @@
                             "source":"src/script/Ball.ts",
                             "searchKey":"Script,Ball",
                             "removeAble":true,
-                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":7},
                             "nodeParent":150,
                             "label":"Ball",
                             "isDirectory":false,
@@ -1409,7 +1401,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1475,7 +1466,7 @@
                             "source":"src/script/Ball.ts",
                             "searchKey":"Script,Ball",
                             "removeAble":true,
-                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":8},
                             "nodeParent":157,
                             "label":"Ball",
                             "isDirectory":false,
@@ -1522,7 +1513,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1588,7 +1578,7 @@
                             "source":"src/script/Ball.ts",
                             "searchKey":"Script,Ball",
                             "removeAble":true,
-                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":9},
                             "nodeParent":164,
                             "label":"Ball",
                             "isDirectory":false,
@@ -1635,7 +1625,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1701,7 +1690,7 @@
                             "source":"src/script/Ball.ts",
                             "searchKey":"Script,Ball",
                             "removeAble":true,
-                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":10},
                             "nodeParent":171,
                             "label":"Ball",
                             "isDirectory":false,
@@ -1748,7 +1737,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1814,7 +1802,7 @@
                             "source":"src/script/Ball.ts",
                             "searchKey":"Script,Ball",
                             "removeAble":true,
-                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":11},
                             "nodeParent":178,
                             "label":"Ball",
                             "isDirectory":false,
@@ -1861,7 +1849,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1927,7 +1914,7 @@
                             "source":"src/script/Ball.ts",
                             "searchKey":"Script,Ball",
                             "removeAble":true,
-                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":12},
                             "nodeParent":185,
                             "label":"Ball",
                             "isDirectory":false,
@@ -1974,7 +1961,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -2040,7 +2026,7 @@
                             "source":"src/script/Ball.ts",
                             "searchKey":"Script,Ball",
                             "removeAble":true,
-                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":13},
                             "nodeParent":192,
                             "label":"Ball",
                             "isDirectory":false,
@@ -2087,7 +2073,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -2103,7 +2088,6 @@
                     "compId":199,
                     "child":[
                         {
-                            "x":45,
                             "type":"Circle",
                             "searchKey":"Circle",
                             "props":{"presetID":2,"preset":"laya/pages/prefab/Ball.prefab"},
@@ -2117,7 +2101,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"CircleCollider",
                             "switchAble":true,
                             "searchKey":"CircleCollider",
@@ -2134,7 +2117,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"RigidBody",
                             "switchAble":true,
                             "searchKey":"RigidBody",
@@ -2151,13 +2133,12 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Script",
                             "switchAble":true,
                             "source":"src/script/Ball.ts",
                             "searchKey":"Script,Ball",
                             "removeAble":true,
-                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":14},
                             "nodeParent":199,
                             "label":"Ball",
                             "isDirectory":false,
@@ -2168,7 +2149,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Label",
                             "searchKey":"Label",
                             "props":{"presetID":6,"preset":"laya/pages/prefab/Ball.prefab"},
@@ -2182,7 +2162,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Image",
                             "searchKey":"Image",
                             "props":{"skin":"game/balls/ball_14.png","presetID":7,"preset":"laya/pages/prefab/Ball.prefab"},
@@ -2206,7 +2185,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -2272,7 +2250,7 @@
                             "source":"src/script/Ball.ts",
                             "searchKey":"Script,Ball",
                             "removeAble":true,
-                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab"},
+                            "props":{"presetID":5,"preset":"laya/pages/prefab/Ball.prefab","number":15},
                             "nodeParent":206,
                             "label":"Ball",
                             "isDirectory":false,
@@ -2323,7 +2301,7 @@
             "x":15,
             "type":"Sprite",
             "searchKey":"Sprite,container_goal,container_goal",
-            "props":{"y":575,"x":319.5,"var":"container_goal","name":"container_goal"},
+            "props":{"y":565,"x":259.5,"var":"container_goal","name":"container_goal"},
             "nodeParent":2,
             "label":"container_goal",
             "isOpen":true,
@@ -2334,15 +2312,15 @@
             "child":[
                 {
                     "x":30,
-                    "type":"Rect",
-                    "searchKey":"Rect",
-                    "props":{"width":500,"lineWidth":1,"height":40,"fillColor":"gray"},
+                    "type":"Image",
+                    "searchKey":"Image,background",
+                    "props":{"y":0,"x":0,"width":620,"skin":"game/goal.png","sizeGrid":"20,20,20,20,0","name":"background","height":50},
                     "nodeParent":103,
-                    "label":"Rect",
+                    "label":"background",
                     "isDirectory":false,
                     "isAniNode":true,
                     "hasChild":false,
-                    "compId":104,
+                    "compId":213,
                     "child":[
                         ]
                 },
@@ -2350,7 +2328,7 @@
                     "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,container",
-                    "props":{"y":0,"x":0,"width":500,"name":"container","height":40},
+                    "props":{"y":0,"x":0,"width":620,"name":"container","height":50},
                     "nodeParent":103,
                     "label":"container",
                     "isDirectory":false,
@@ -2358,7 +2336,8 @@
                     "hasChild":false,
                     "compId":105,
                     "child":[
-                        ]
+                        ],
+                    "$HIDDEN":true
                 }]
         },
         {

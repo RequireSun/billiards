@@ -2,6 +2,7 @@
 import Game from "./script/Game"
 import Ball from "./script/Ball"
 import GameControl from "./script/GameControl"
+import Player from "./script/Player"
 /*
 * 游戏初始化配置;
 */
@@ -24,6 +25,7 @@ export default class GameConfig{
         reg("script/Game.ts",Game);
         reg("script/Ball.ts",Ball);
         reg("script/GameControl.ts",GameControl);
+        reg("script/Player.ts",Player);
     }
 }
 GameConfig.init();

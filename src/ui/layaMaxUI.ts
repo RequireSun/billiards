@@ -20,11 +20,4 @@ export module ui.game {
             this.loadScene("game/Hole");
         }
     }
-    export class UserLeftUI extends Laya.View {
-        constructor(){ super()}
-        createChildren():void {
-            super.createChildren();
-            this.loadScene("game/UserLeft");
-        }
-    }
 }

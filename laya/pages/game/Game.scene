@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"Scene",
-    "selectedBox":32,
-    "selecteID":113,
+    "selectedBox":2,
+    "selecteID":32,
     "searchKey":"Scene",
     "props":{"width":1136,"sceneColor":"#000000","runtime":"script/Game.ts","height":640},
     "nodeParent":-1,
@@ -498,14 +498,13 @@
             "props":{"y":67,"x":161,"width":817,"name":"container_ball","height":416},
             "nodeParent":2,
             "label":"container_ball",
-            "isOpen":true,
+            "isOpen":false,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":32,
             "child":[
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -618,7 +617,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -731,7 +729,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -844,7 +841,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -957,7 +953,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1070,7 +1065,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1183,7 +1177,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1296,7 +1289,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1409,7 +1401,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1522,7 +1513,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1635,7 +1625,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1748,7 +1737,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1861,7 +1849,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -1974,7 +1961,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -2087,7 +2073,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -2200,7 +2185,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "selectedBox":81,
                     "selecteID":88,
@@ -2374,7 +2358,7 @@
         {
             "x":15,
             "type":"UIView",
-            "source":"game/UserLeft.scene",
+            "source":"game/PlayerLeft.scene",
             "searchKey":"UIView",
             "props":{"y":540,"x":78.5},
             "nodeParent":2,
@@ -2389,7 +2373,7 @@
         {
             "x":15,
             "type":"UIView",
-            "source":"game/UserRight.scene",
+            "source":"game/PlayerRight.scene",
             "searchKey":"UIView",
             "props":{"y":540,"x":899},
             "nodeParent":2,

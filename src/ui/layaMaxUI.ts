@@ -4,7 +4,6 @@ import Dialog=Laya.Dialog;
 import Scene=Laya.Scene;
 export module ui.game {
     export class GameUI extends Laya.Scene {
-		public desk:Laya.Sprite;
 		public container_wall:Laya.Sprite;
 		public container_hole:Laya.Sprite;
 		public container_goal:Laya.Sprite;
@@ -19,6 +18,13 @@ export module ui.game {
         createChildren():void {
             super.createChildren();
             this.loadScene("game/Hole");
+        }
+    }
+    export class UserLeftUI extends Laya.View {
+        constructor(){ super()}
+        createChildren():void {
+            super.createChildren();
+            this.loadScene("game/UserLeft");
         }
     }
 }

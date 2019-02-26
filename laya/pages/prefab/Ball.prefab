@@ -2,11 +2,11 @@
     "x":0,
     "type":"Sprite",
     "selectedBox":81,
-    "selecteID":86,
+    "selecteID":88,
     "searchKey":"Sprite",
     "props":{"y":0,"x":0,"width":30,"sceneColor":null,"presetID":1,"preset":"laya/pages/prefab/Ball.prefab","isPresetRoot":true,"height":30},
     "nodeParent":-1,
-    "maxID":87,
+    "maxID":89,
     "label":"Sprite(Ball)",
     "isOpen":true,
     "isDirectory":true,
@@ -90,6 +90,20 @@
             "isAniNode":true,
             "hasChild":false,
             "compId":86,
+            "child":[
+                ]
+        },
+        {
+            "x":15,
+            "type":"Image",
+            "searchKey":"Image,background",
+            "props":{"y":15,"x":15,"width":30,"presetID":7,"preset":"laya/pages/prefab/Ball.prefab","pivotY":15,"pivotX":15,"name":"background","height":30},
+            "nodeParent":81,
+            "label":"background",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":88,
             "child":[
                 ]
         }],

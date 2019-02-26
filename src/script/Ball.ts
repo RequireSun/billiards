@@ -20,11 +20,11 @@ export default class Ball extends Laya.Script {
 
     onEnable(): void {
         if (!this.isInitialized) {
-            if (this.number) {
-                const label: Laya.Label = this.owner.getChildByName('label') as Laya.Label;
+            // if (this.number) {
+            //     const label: Laya.Label = this.owner.getChildByName('label') as Laya.Label;
         
-                label.text = `${this.number}`;
-            }
+            //     label.text = `${this.number}`;
+            // }
     
             Object.defineProperty(this.owner, 'startMove', {
                 enumerable: false,

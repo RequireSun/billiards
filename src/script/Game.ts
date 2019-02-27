@@ -57,8 +57,15 @@ export default class Game extends ui.game.GameUI {
     private _middleLeft: number;
     private _middleRight: number;
 
+    /**
+     * 这个 get set 写的有点傻, 本来以为只需要写 get 的
+     */
     get isBallRunning(): boolean {
         return this._isBallRunning;
+    }
+
+    set isBallRunning(val: boolean) {
+        this._isBallRunning = val;
     }
 
     constructor() {

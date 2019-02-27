@@ -15,6 +15,13 @@ export default class GameControl extends Laya.Script {
     static instance: GameControl;
 
     private _containerBall: Laya.Sprite;
+    private _playerLeft: Laya.Sprite;
+    private _playerRight: Laya.Sprite;
+
+    /**
+     * 目前 0 代表 left 1 代表 right
+     */
+    private _playerCurrent: number;
     private _goal: { [key: number]: boolean } = {
         1: false,
         2: false,
@@ -39,6 +46,8 @@ export default class GameControl extends Laya.Script {
 
     onEnable(): void {
         this._containerBall = this.owner.getChildByName("container_ball") as Laya.Sprite;
+        this._playerLeft = this.owner.getChildByName('player_left') as Laya.Sprite;
+        this._playerRight = this.owner.getChildByName('player_right') as Laya.Sprite;
 
         this.addListeners();
     }
@@ -50,6 +59,11 @@ export default class GameControl extends Laya.Script {
     onStageClick(e: Laya.Event): void {
         //停止事件冒泡，提高性能，当然也可以不要
         e.stopPropagation();
+
+        // 如果球在动, 就不让继续击球了
+        if ((this.owner as Game).isBallRunning) {
+            return;
+        }
 
         // 这个是随机方向生成, 最早开发的时候用的, 现在早就用不到了
         // const x: number = (.5 < Math.random() ? 1 : -1) * Math.random() * 10;

@@ -49,6 +49,24 @@ export default class Ball extends Laya.Script {
 
         const { startX, startY, endX, endY, middle, middleLeft, middleRight } = Game.instance.getCollisionCoordinate();
 
+        const rig: Laya.RigidBody = this.owner.getComponent(Laya.RigidBody)
+        const { x: currentX, y: currentY } = rig.linearVelocity;
+
+        if (0.1 > x && -0.1 < x && 0.1 > y && -0.1 < y) {
+            // 因为这个都是碰撞操作, 所以一般不太可能出现非线性降速, 应该都能触发这个东西
+            if (0 !== x && 0 !== y) {
+                rig.setVelocity({ x: 0, y: 0, });
+                // if (Game.instance.ballRunning[this.number]) {
+                //     Game.instance.ballRunning[this.number] = false;
+                // }
+            }
+        } else {
+            // 只有是非动状态才会置为动
+            // if (!Game.instance.ballRunning[this.number]) {
+            //     Game.instance.ballRunning[this.number] = true;
+            // }
+        }
+
         if (x < startX) {
             if (y < startY) {
                 if (22 > Math.sqrt(x ** 2 + y ** 2)) {

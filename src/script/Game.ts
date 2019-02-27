@@ -131,8 +131,12 @@ export default class Game extends ui.game.GameUI {
             }
         }
 
+        // 当所有球停止运动的时候, 触发个事件给外面
+        if (this._isBallRunning && !isRunning) {
+            this.event('ball.all.stop');
+        }
+
         this._isBallRunning = isRunning;
-        console.log('isBallRunning', this._isBallRunning);
     }
 
     getCollisionCoordinate() {

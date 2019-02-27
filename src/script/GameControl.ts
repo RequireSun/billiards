@@ -2,6 +2,7 @@
 
 import Game from './Game';
 import Ball from './Ball';
+import Player from './Player';
 
 const initialPositionWhite: Laya.Point = new Laya.Point(140, 208);
 // 进球后在下方展示区域是否将角度回正 (我感觉不回正也挺好看的)
@@ -38,6 +39,12 @@ export default class GameControl extends Laya.Script {
         13: false,
         14: false,
         15: false,
+    };
+
+    private _flags: {
+        goalThisTurn: number[],
+    } = {
+        goalThisTurn: [],
     };
 
     constructor() {
@@ -90,17 +97,22 @@ export default class GameControl extends Laya.Script {
 
     addListeners(): void {
         // this.owner.on('ball.goal', this, this.handlerGoal);
+        // 因为使用事件系统会导致进球判定变成异步且会重入, 因而在这里改成了直接把函数定义上去的方法
         Object.defineProperty(this.owner, 'handlerGoal', {
             enumerable: false,
             value: (number: number) => this.handlerGoal(number),
         });
+
+        this.owner.on('ball.all.stop', this, this.judgeShot);
     }
 
     removeListeners(): void {
         // this.owner.off('ball.goal', this, this.handlerGoal);
         Object.defineProperty(this.owner, 'handlerGoal', {
             enumerable: false,
-        })
+        });
+
+        this.owner.off('ball.all.stop', this, this.judgeShot);
     }
 
     handlerGoal(number: number): void {
@@ -120,5 +132,46 @@ export default class GameControl extends Laya.Script {
             isGoalRotationReset && (ball.rotation = 0);
             (this.owner as Game).container_goal.addChild(ball);
         }
+        this._flags.goalThisTurn.push(number);
+    }
+
+    judgeShot(): void {
+        const goalThisTurn = this._flags.goalThisTurn;
+
+        if (goalThisTurn.length) {
+            if (-1 < goalThisTurn.indexOf(0)) {
+                // TODO
+                // 可能需要罚杆？
+                // 是不是进球全不算？
+            }
+
+            if (-1 < goalThisTurn.indexOf(8)) {
+                // TODO 8 号球进了怎么算
+            }
+
+            if (-1 < goalThisTurn.findIndex((number: number): boolean => 0 !== number && 8 !== number)) {
+                const playerLeft: Player = this._playerLeft.getComponent(Player);
+                const playerRight: Player = this._playerRight.getComponent(Player);
+    
+                if (undefined === playerLeft.target && undefined === playerRight.target) {
+                    // this._playerCurrent
+                    const firstBall: number = goalThisTurn.find((number: number) => 0 !== number && 8 !== number);
+
+                    if ((0 === this._playerCurrent && 8 > firstBall) || ( 1 === this._playerCurrent && 8 < firstBall)) {
+                        // 左玩家进了整球, 或者右玩家进了半球, 就是左整右半
+                        playerLeft.target = 0;
+                        playerRight.target = 1;
+                    } else {
+                        // 否则就是左半右整
+                        playerLeft.target = 1;
+                        playerRight.target = 0;
+                    }
+                }
+            }
+
+            this._flags.goalThisTurn = [];
+        }
+
+        this._playerCurrent = 0 === this._playerCurrent ? 1 : 0;
     }
 }

@@ -56,7 +56,7 @@ export default class Ball extends Laya.Script {
         const { x: currentX, y: currentY } = rig.linearVelocity;
 
         // 球最后零点几的位移基本看不出来了, 这时候再继续等待实在是太智障了
-        if (1.5 > x && -1.5 < x && 1.5 > y && -1.5 < y) {
+        if (3 > x && -3 < x && 3 > y && -3 < y) {
             // 因为这个都是碰撞操作, 所以一般不太可能出现非线性降速, 应该都能触发这个东西
             if (0 !== x && 0 !== y) {
                 rig.setVelocity({ x: 0, y: 0, });

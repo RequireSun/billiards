@@ -6,8 +6,30 @@ export default class Player extends Laya.Script {
     name: string;
     avatar: string;
 
+    /**
+     * 0: 整
+     * 1: 花
+     */
+    private _target: number;
+
+    get target(): number {
+        return this._target;
+    }
+
+    set target(val: number) {
+        this._target = val;
+        console.log('target', val);
+
+        if (0 === val) {
+            // (this.owner.getChildByName('container_ball') as Laya.Sprite).texture = 'game/balls/ball_01.png';
+            (this.owner.getChildByName('target') as Laya.Image).skin = 'game/balls/ball_01.png';
+        } else if (1 === val) {
+            (this.owner.getChildByName('target') as Laya.Image).skin = 'game/balls/ball_09.png';
+        }
+    }
+
     constructor() { 
-        super(); 
+        super();
     }
 
     onEnable(): void {

@@ -1,4 +1,5 @@
 import GameConfig from "./GameConfig";
+
 class Main {
 	constructor() {
 		//根据IDE设置初始化引擎		
@@ -19,6 +20,8 @@ class Main {
 
 		//激活资源版本控制，version.json由IDE发布功能自动生成，如果没有也不影响后续流程
 		Laya.ResourceVersion.enable("version.json", Laya.Handler.create(this, this.onVersionLoaded), Laya.ResourceVersion.FILENAME_VERSION);
+
+		this.onSetupShare();
 	}
 
 	onVersionLoaded(): void {
@@ -30,6 +33,23 @@ class Main {
 		//加载IDE指定的场景
 		GameConfig.startScene && Laya.Scene.open(GameConfig.startScene);
 	}
-}
+
+	onSetupShare(): void {
+		if (wx && wx.showShareMenu) {
+			wx.showShareMenu({
+				showShareItems: ['qzone', 'qq'],
+			} as any);
+		}
+
+		// if (wx && (wx as any).onShareAppMessage) {
+		// 	(wx as any).onShareAppMessage(() => {
+		// 		console.log(123123);
+		// 		return {
+		// 			title: '测试标题',
+		// 			imageUrl: 'https://via.placeholder.com/500x400/09f/fff.png?text=Placeholder+Image+500x400',
+		// 		};
+		// 	});
+		// }
+	}}
 //激活启动类
 new Main();
